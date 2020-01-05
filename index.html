@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Survey Penghuni Kos Mutiara Kedasih</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<header>
+		<p id="title">
+			Survey Penghuni Kos Mutiara Kedasih
+		</p><p id="decription">
+			Terimakasih sudah meluangkan waktu anda untuk peningkatan kos mutiara kedasih
+		</p>		
+	</header>
+	<div class="container">
+	<form id="survey-form" action="submit-form.html">
+		
+		<label id="label-name" for="name"> Nama : </label><br>
+		<input class="field field-area" required type="text" id="name" name="nama" placeholder="Masukkan nama anda"> <br>
+		
+		<label id="label-email" for="email">Email : </label><br>
+		<input class="field field-area" required type="email" id="email" name="email" placeholder="Masukkan email anda"> <br>
+		
+		<label id="label-number" for="number">Usia : </label><br>
+		<input class="field field-area" required type="number" id="number" name="usia" placeholder="cth: 20" min="1" max="100"><br>
+
+		<label id="label-dropdown" for="dropdown">Pekerjaan :</label> <br>
+		<select class="field field-area" id="dropdown" name="pekerjaan">
+			<option value="mahasiswa">Mahasiswa</option>
+			<option value="wiraswasta">Wiraswasta</option>
+			<option value="pegawai swasta">Pegawai Swasta</option>
+			<option value="pegawai negeri">Pegawai Negeri</option>		
+		</select> <br>
+		<div class="field-area">
+			<label id="radio" for="asal">Daerah asal :</label> <br>
+			<input type="radio" name="asal" value="luar">Luar bekasi <br>	
+			<input type="radio" name="asal" value="dalam">Bekasi <br>			
+		</div>
+		<div class="field-area">
+			<label id="checkbox" for="checkbox">Peralatan di kos :</label> <br>
+			<input type="checkbox" name="peralatan1" value="Komputer" checked>Komputer <br>
+			<input type="checkbox" name="peralatan2" value="setrika">Setrika <br>
+			<input type="checkbox" name="peralatan3" value="ricecooker" checked>Ricecooker <br>
+			<input type="checkbox" name="peralatan4" value="televisi" checked>Televisi <br>
+		</div>
+		
+		Masukan dan Saran <br>
+		<textarea class="field field-area" id="text-area" name="masukan" placeholder="Tambahkan masukan dan saran anda" rows="6" cols="50">
+		</textarea> <br>
+
+		<input class="field" type="submit" value="Kirim" name="kirim" id="submit">
+	</form>
+	</div>
+</body>
+</html>
